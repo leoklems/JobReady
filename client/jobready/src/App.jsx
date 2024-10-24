@@ -4,6 +4,9 @@ import { Toaster } from "react-hot-toast";
 import { useModal } from "./context/ModalContext";
 import './App.css'
 
+import DefaultLayout from "./layout/DefaultLayout";
+import Homepage from "./pages/Homepage";
+
 function App() {
   const { appLoading, setAppLoading } = useModal()
 
@@ -13,16 +16,16 @@ function App() {
 
   return (
     <>
-      <main>
+      <main className="min-h-screen ">
         <h2>Hello</h2>
         <Routes>
-        {/* <Route path="/" element={<DefaultLayout />}> */}
+        <Route path="/" element={<DefaultLayout />}>
           {/* All static pages (homepage, about, contact and disclaimer routes here) */}
-          {/* <Route index element={<Homepage />} />
-          <Route path="contact" element={<Contact />} />
+          <Route index element={<Homepage />} />
+          {/* <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
           <Route path="disclaimer" element={<Disclaimer />} /> */}
-        {/* </Route> */}
+        </Route>
         </Routes>
       </main>
     </>
