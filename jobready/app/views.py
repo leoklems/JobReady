@@ -34,7 +34,7 @@ class Home(View):
     # ai_model = joblib.load(model_path)
     
     def get(self, request):
-        welcome_message = "Welcome to our homepage!"
+        welcome_message = "Welcome to JobReady!"
         # experts = Expert.objects.all().order_by('-date_joined')[:5]
         # items = [{"name": e.user.username, "specialty": e.specialty} for e in experts]
         print(welcome_message)

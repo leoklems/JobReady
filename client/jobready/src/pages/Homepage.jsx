@@ -21,7 +21,7 @@ console.log("api : ", api)
     })
   return (
     <main className="py-12">
-      <h3>Message: { message }</h3>
+      <h3 className="text-blue-600">{ message }</h3>
     </main>
   );
 }
