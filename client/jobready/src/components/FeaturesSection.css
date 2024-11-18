@@ -1,0 +1,49 @@
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.section-title {
+  grid-column: span 3;  /* Make title span all columns */
+  font-size: 24px;
+  font-weight: bold;
+  color: #021004;
+  margin-bottom: 20px;
+}
+
+.section-paragraph {
+  grid-column: span 3;  
+  color: #021004;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-size: large;
+  font-weight: 100;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000b02;
+}
+
+.feature-image {
+  width: 120px; 
+  height: 120px;
+}
+
+.feature-title {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.feature-description {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}

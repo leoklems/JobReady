@@ -1,0 +1,115 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 30px;
+    padding-left: 10px;
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0px 2px 10px rgba(183, 178, 178, 0.1); /* Transparent shadow at the bottom */
+    z-index: 1000; 
+}
+
+
+body {
+    margin-top: 70px; 
+}
+
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 150px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
+.header nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header nav a {
+    color: rgb(10, 0, 0);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+.header .sign-in,
+.header .get-started {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header .sign-in {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.header .get-started {
+    background-color: #3CB371; 
+    color: white;
+}
+
+.header .sign-in:hover,
+.header .get-started:hover {
+    opacity: 0.8;
+}
